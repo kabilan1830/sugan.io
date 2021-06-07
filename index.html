@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUGAN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div class="side-bar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu">
+      <div class="item"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Sub Item 01</a>
+          <a href="#" class="sub-item">Sub Item 02</a>
+          <a href="#" class="sub-item">Sub Item 03</a>
+        </div>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-th"></i>Forms</a></div>
+      <div class="item">
+        <a class="sub-btn"><i class="fas fa-cogs"></i>Settings<i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="#" class="sub-item">Sub Item 01</a>
+          <a href="#" class="sub-item">Sub Item 02</a>
+        </div>
+      </div>
+      <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
+    </div>
+  </div>
+  <section class="main">
+    <h1>WELCOME</h1>
+  </section>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //jquery for toggle sub menus
+      $('.sub-btn').click(function () {
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+
+      //jquery for expand and collapse the sidebar
+      $('.menu-btn').click(function () {
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function () {
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+    });
+  </script>
+
+  <h1 style="color: darkturquoise;text-align: center;">Product</h1>
+
+
+  <!-- INSTAGRAM -->
+  <div class="card">
+    <img src="WhatsApp Image 2021-06-07 at 5.30.15 PM.jpeg" alt="KABI" style="width:100%">
+    <h1 style="color: white" ;>INSTAGRAM</h1>
+    <p class="price"></p>
+    <p style="color: white;">Instagram is an American photo and video sharing social networking service created by
+      Kevin Systrom and Mike Krieger. In April 2012, Facebook acquired the service for approximately US$1 billion
+      in
+      cash and
+      stock.</p>
+    <p><button><a href="https://instagram.com/kabilan_1807?utm_medium=copy_link"
+          class="w3-btn w3-black">Download/Open</a>
+      </button></p>
+
+  </div>
+
+
+  <br><br>
+
+  <!-- WHATSAPP -->
+
+  <div class="card">
+
+    <img src="wa.link_u7sadq.png" alt="SCAN" style="width:100%">
+    <h1 style="color: white" ;>WhatsApp</h1>
+    <p class="price"></p>
+    <p style="color: white;">WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform
+      centralized messaging and voice-over-IP service owned by Facebook, Inc. It allows users to send text
+      messages
+      and voice
+      messages, make voice and video calls, and share images, documents, user locations, and other content.</p>
+    <p><button><a href="https://wa.link/u7sadq" class="w3-btn w3-black">Download/Open</a>
+      </button></p>
+
+  </div>
+  <br><br>
+
+
+  <!-- photos -->
+
+  <div class="card">
+
+    <img src="WhatsApp Image 2021-06-07 at 6.57.24 PM.jpeg" alt="SCAN" style="width:100%">
+    <h1 style="color: white" ;>Photos</h1>
+    <p class="price"></p>
+    <p style="color: white;">Gayu marriage Pictures</p>
+    <p><button><a href="https://drive.google.com/drive/folders/1KuDbOeSq2Pn7L_K86m29pvyHUT1-V7Mr?usp=sharing"
+          class="w3-btn w3-black">Download/Open</a>
+      </button></p>
+
+  </div>
+  <br><br>
+
+  <!-- movie -->
+
+  <div class="card">
+    <img src="karnan-movie-posters_16179793174.jpg" alt="KARNAN" style="width:100%">
+    <h1 style="color: white" ;>MOVIE</h1>
+    <p class="price"></p>
+    <p style="color: white;">Danush in as KARNAN</p>
+    <p><button><a href="http://s7.sendfilesda.xyz/files/Karnan%20(2021).mp4" class="w3-btn w3-black">Download/Open</a>
+      </button></p>
+
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
